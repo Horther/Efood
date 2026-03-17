@@ -1,4 +1,4 @@
-import Plate from '../../models'
+import Plate from '../../models/plate'
 import Product from '../Product'
 import { Container, List } from './style'
 

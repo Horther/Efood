@@ -1,13 +1,5 @@
 import styled from 'styled-components'
-import { cores } from '../../styles'
-import fundo from '../../assets/images/fundo.svg'
 
-export const Hero = styled.div`
-  background-image: url(${fundo});
-  display: block;
-  background-color: ${cores.cremeeEscuro};
-  width: 100%;
-`
 export const Container = styled.div`
   width: 100%;
   display: flex;

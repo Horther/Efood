@@ -1,76 +1,60 @@
-import Plate from '../../models/plate'
-
-import ProductList from '../../components/ProductList'
-
-import macarrao from '../../assets/images/macarrão.svg'
-// import pizza from '../../assets/images/pizza.svg'
-import sushi from '../../assets/images/sushi.svg'
-import Header from '../../components/Header'
+import Banner from '../../components/Banner'
 import Footer from '../../components/Footer'
+import Card from '../../components/Cardapio'
+import CItem from '../../models/cItem'
+import pizza from '../../assets/images/pizza.svg'
 
-const cardapio: Plate[] = [
+const cardapio: CItem[] = [
   {
     id: 1,
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quam modi eum tenetur odit quos nemo repudiandae illum nesciunt ea optio aperiam praesentium, quaerat soluta necessitatibus distinctio vitae deserunt quasi?',
-    image: sushi,
-    rank: 4.3,
-    title: 'Sushi',
-    tag: ['Destaque da semana', 'Sushi']
+    image: pizza,
+    title: 'Pizza de Marguerita'
   },
   {
-    id: 2,
+    id: 1,
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quam modi eum tenetur odit quos nemo repudiandae illum nesciunt ea optio aperiam praesentium, quaerat soluta necessitatibus distinctio vitae deserunt quasi?',
-    image: macarrao,
-    rank: 4.3,
-    title: 'Macarronada',
-    tag: ['Italiana']
+    image: pizza,
+    title: 'Pizza de Marguerita'
   },
   {
-    id: 3,
+    id: 1,
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quam modi eum tenetur odit quos nemo repudiandae illum nesciunt ea optio aperiam praesentium, quaerat soluta necessitatibus distinctio vitae deserunt quasi?',
-    image: macarrao,
-    rank: 4.3,
-    title: 'Macarronada',
-    tag: ['Italiana']
+    image: pizza,
+    title: 'Pizza de Marguerita'
   },
   {
-    id: 4,
+    id: 1,
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quam modi eum tenetur odit quos nemo repudiandae illum nesciunt ea optio aperiam praesentium, quaerat soluta necessitatibus distinctio vitae deserunt quasi?',
-    image: macarrao,
-    rank: 4.3,
-    title: 'Macarronada',
-    tag: ['Italiana']
+    image: pizza,
+    title: 'Pizza de Marguerita'
   },
   {
-    id: 5,
+    id: 1,
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quam modi eum tenetur odit quos nemo repudiandae illum nesciunt ea optio aperiam praesentium, quaerat soluta necessitatibus distinctio vitae deserunt quasi?',
-    image: macarrao,
-    rank: 4.3,
-    title: 'Macarronada',
-    tag: ['Italiana']
+    image: pizza,
+    title: 'Pizza de Marguerita'
   },
   {
-    id: 6,
+    id: 1,
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quam modi eum tenetur odit quos nemo repudiandae illum nesciunt ea optio aperiam praesentium, quaerat soluta necessitatibus distinctio vitae deserunt quasi?',
-    image: macarrao,
-    rank: 4.3,
-    title: 'Macarronada',
-    tag: ['Italiana']
+    image: pizza,
+    title: 'Pizza de Marguerita'
   }
 ]
 
-const Home = () => (
+const Cardapio = () => (
   <>
-    <Header />
-    <ProductList plate={cardapio} />
+    <Banner />
+    <Card cItem={cardapio} />
     <Footer />
   </>
 )
 
-export default Home
+export default Cardapio

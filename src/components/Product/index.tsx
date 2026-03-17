@@ -33,7 +33,7 @@ const Product = ({ title, rank, description, image, bgColor, tag }: Props) => (
       </div>
       <div className="texto">
         <Descricao>{description}</Descricao>
-        <Button type="link" to="#" title="Saiba mais">
+        <Button type="link" to="/cardapio" title="Saiba mais">
           Saiba mais
         </Button>
       </div>

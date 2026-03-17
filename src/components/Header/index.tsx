@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom'
 
-import { Container, Hero, Title, Img } from './styles'
+import { Container, Title, Img } from './styles'
 
 import logo from '../../assets/images/logo.svg'
+import { Cabecalho } from '../../styles'
 
 const Header = () => (
-  <Hero>
+  <Cabecalho>
     <Container>
       <Link to={'/'}>
         <Img>
@@ -16,7 +17,7 @@ const Header = () => (
     <Container>
       <Title>Viva experiências gastronômicas no conforto da sua casa </Title>
     </Container>
-  </Hero>
+  </Cabecalho>
 )
 
 export default Header

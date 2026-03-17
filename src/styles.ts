@@ -1,4 +1,5 @@
-import { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
+import fundo from './assets/images/fundo.svg'
 
 export const cores = {
   branca: '#EEE',
@@ -15,7 +16,9 @@ export const GlobalCss = createGlobalStyle`
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
     list-style: none;
+    text-decoration: none;
   }
+
 
   body{
     background-color: ${cores.creme};
@@ -27,4 +30,10 @@ export const GlobalCss = createGlobalStyle`
     width: 100%;
     margin: 0 auto;
   }
+`
+
+export const Cabecalho = styled.div`
+  background-image: url(${fundo});
+  background-color: ${cores.cremeeEscuro};
+  width: 100%;
 `
