@@ -18,10 +18,10 @@ const CardapioItem = ({ title, description, image }: Props) => (
       <div className="texto">
         <Descricao>{description}</Descricao>
       </div>
-      <Button type="button" title="Adicinar ao carrinho">
-        Adicinar ao carrinho
-      </Button>
     </Informacoes>
+    <Button type="button" title="Adicinar ao carrinho">
+      Adicinar ao carrinho
+    </Button>
   </Card>
 )
 
