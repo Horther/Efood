@@ -19,7 +19,7 @@ const Banner = () => (
     <Showcase backgroundImage={macarrao}>
       <div className="container">
         <h2>Italiana</h2>
-        <p>la dolce vita trattoria</p>
+        <p>La Dolce Vita Trattoria</p>
       </div>
     </Showcase>
   </Cabecalho>

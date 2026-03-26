@@ -13,6 +13,15 @@ export const Card = styled.div<
   position: relative;
   margin-top: 48px;
 
+  .cImage {
+    margin-bottom: -4px;
+  }
+
+  .cInfo {
+    border: 1px solid ${cores.vermelha};
+    border-top: 0px;
+  }
+
   ${TagContainer} {
     margin-right: 8px;
   }

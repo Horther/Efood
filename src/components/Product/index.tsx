@@ -15,29 +15,33 @@ export type Props = {
 
 const Product = ({ title, rank, description, image, bgColor, tag }: Props) => (
   <Card backgroundColor={bgColor}>
-    <img className="bgImage" src={image} alt={title} />
-    <Destaque>
-      {tag.map((destacado) => (
-        <Tag key={destacado}>{destacado}</Tag>
-      ))}
-    </Destaque>
-    <Informacoes>
-      <div className="cabecalho">
-        <Title>{title}</Title>
-        <Rank>
-          {rank}{' '}
-          <span>
-            <img src={estrela} alt="Nota" />
-          </span>
-        </Rank>
-      </div>
-      <div className="texto">
-        <Descricao>{description}</Descricao>
-        <Button type="link" to="/cardapio" title="Saiba mais">
-          Saiba mais
-        </Button>
-      </div>
-    </Informacoes>
+    <div className="cImage">
+      <img className="bgImage" src={image} alt={title} />
+      <Destaque>
+        {tag.map((destacado) => (
+          <Tag key={destacado}>{destacado}</Tag>
+        ))}
+      </Destaque>
+    </div>
+    <div className="cInfo">
+      <Informacoes>
+        <div className="cabecalho">
+          <Title>{title}</Title>
+          <Rank>
+            {rank}{' '}
+            <span>
+              <img src={estrela} alt="Nota" />
+            </span>
+          </Rank>
+        </div>
+        <div className="texto">
+          <Descricao>{description}</Descricao>
+          <Button type="link" to="/cardapio" title="Saiba mais">
+            Saiba mais
+          </Button>
+        </div>
+      </Informacoes>
+    </div>
   </Card>
 )
 

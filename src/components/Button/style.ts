@@ -10,6 +10,7 @@ export const ButtonContainer = styled.button`
   padding-top: 4px;
   padding-bottom: 4px;
   text-align: center;
+  border: none;
 `
 
 export const ButtonLink = styled(Link)`

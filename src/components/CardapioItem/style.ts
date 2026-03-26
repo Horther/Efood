@@ -7,7 +7,7 @@ export const Card = styled.div`
   background-color: ${cores.vermelha};
   position: relative;
   margin-top: 48px;
-  padding: 4px;
+  padding: 8px;
 
   ${ButtonContainer} {
     margin-top: 16px;

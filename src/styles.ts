@@ -2,7 +2,7 @@ import styled, { createGlobalStyle } from 'styled-components'
 import fundo from './assets/images/fundo.svg'
 
 export const cores = {
-  branca: '#EEE',
+  branca: '#fff',
   preta: '#111',
   vermelha: '#E66767',
   cremeeEscuro: '#FFEBD9',
