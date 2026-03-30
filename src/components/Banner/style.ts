@@ -38,17 +38,18 @@ export const Showcase = styled.div`
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(${macarrao});
   height: 260px;
-  font-size: 32px;
 
   .container {
+    font-size: 32px;
     p {
       font-weight: bold;
       color: ${cores.branca};
       align-items: flex-end;
-      margin-top: 140px;
+      margin-top: 160px;
     }
 
     h2 {
+      font-size: 32px;
       padding-top: 8px;
       font-weight: 100;
       color: ${cores.branca};
